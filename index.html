@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/png;base64,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">
+</head>
+
+<body>
+
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+
+  <script>
+
+    function playSound(e) {
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
+      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+      if (!audio) return // stops from running all together if no data-key is in code. 
+      audio.currentTime = 0; //rewinds audio clip to the start. 
+      audio.play()
+      key.classList.add('playing')
+    }
+
+    function removeTransition(e) {
+      if (e.propertyName !== 'transform') return // only listens for the "transform" property on the transition event
+      this.classList.remove('playing') // removes the CSS styling to reset it back. 
+    }
+
+    const keys = document.querySelectorAll('.key')
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+
+    window.addEventListener('keydown', playSound)
+
+  </script>
+
+
+</body>
+
+</html>
